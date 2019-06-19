@@ -49,54 +49,6 @@
     <!-- recipes -->
     <div class="recipes container grey-text text-darken-1">
       <h6 class="center">Avengers Recipes</h6>
-      <div class="card-panel recipe white row">
-        <img src="/img/dish.png" alt="recipe thumb" />
-        <div class="recipe-details">
-          <div class="recipe-title">Ramen Noodles</div>
-          <div class="recipe-ingredients">
-            Kidney Beans, Noodles, Garlic oil
-          </div>
-        </div>
-        <div class="recipe-delete">
-          <i class="material-icons">delete_outline</i>
-        </div>
-      </div>
-      <div class="card-panel recipe white row">
-        <img src="/img/dish.png" alt="recipe thumb" />
-        <div class="recipe-details">
-          <div class="recipe-title">Ramen Noodles</div>
-          <div class="recipe-ingredients">
-            Kidney Beans, Noodles, Garlic oil
-          </div>
-        </div>
-        <div class="recipe-delete">
-          <i class="material-icons">delete_outline</i>
-        </div>
-      </div>
-      <div class="card-panel recipe white row">
-        <img src="/img/dish.png" alt="recipe thumb" />
-        <div class="recipe-details">
-          <div class="recipe-title">Ramen Noodles</div>
-          <div class="recipe-ingredients">
-            Kidney Beans, Noodles, Garlic oil
-          </div>
-        </div>
-        <div class="recipe-delete">
-          <i class="material-icons">delete_outline</i>
-        </div>
-      </div>
-      <div class="card-panel recipe white row">
-        <img src="/img/dish.png" alt="recipe thumb" />
-        <div class="recipe-details">
-          <div class="recipe-title">Ramen Noodles</div>
-          <div class="recipe-ingredients">
-            Kidney Beans, Noodles, Garlic oil
-          </div>
-        </div>
-        <div class="recipe-delete">
-          <i class="material-icons">delete_outline</i>
-        </div>
-      </div>
     </div>
 
     <div class="center">
@@ -137,7 +89,28 @@
       </form>
     </div>
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: 'AIzaSyAILpNYRqxyIQN3i-BKRJOQ-JpYwDfkfgk',
+        authDomain: 'food-avengers-pwa.firebaseapp.com',
+        databaseURL: 'https://food-avengers-pwa.firebaseio.com',
+        projectId: 'food-avengers-pwa',
+        storageBucket: 'food-avengers-pwa.appspot.com',
+        messagingSenderId: '336490590509',
+        appId: '1:336490590509:web:4b6f91b67317f4d6'
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+    </script>
+
     <script src="/js/ui.js"></script>
+    <script src="/js/db.js"></script>
     <script src="/js/app.js"></script>
   </body>
 </html>
