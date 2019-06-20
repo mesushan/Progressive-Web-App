@@ -11,6 +11,10 @@
       rel="stylesheet"
     />
     <link type="text/css" href="/css/styles.css" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-2.1.1.min.js"
+    ></script>
     <script type="text/javascript" src="/js/materialize.min.js"></script>
     <link rel="manifest" href="manifest.json" />
     <!-- ios support -->
@@ -45,15 +49,27 @@
         >
       </li>
     </ul>
+    <div class="container">
+      <ul class="collapsible" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">perm_device_information</i
+            >ProgressiveWebApp Visitor Info
+          </div>
+          <div class="collapsible-body">
+            <p>
+              This app is hosted in firebase as test mode so that visitors can
+              play around and know how flawlessly PWA works on both online and
+              offline mode. Can also be added to home screen for mobile devices
+              which behaves as a native app.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
 
     <!-- recipes -->
     <div class="recipes container grey-text text-darken-1">
-      <p>
-        This app is hosted in firebase as test mode so that visitors can play
-        around and know how flawlessly PWA works on both online and offline
-        mode. Can also be added to home screen for mobile devices which behaves
-        as a native app.
-      </p>
       <h6 class="center">Avengers Recipes</h6>
     </div>
 

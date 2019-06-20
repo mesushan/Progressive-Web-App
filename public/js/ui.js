@@ -34,3 +34,8 @@ const removeRecipe = id => {
   const recipe = document.querySelector(`.recipe[data-id=${id}]`);
   recipe.remove();
 };
+
+//adding collapsible info in main page
+$(document).ready(function() {
+  $('.collapsible').collapsible();
+});
